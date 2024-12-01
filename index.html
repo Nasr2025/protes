@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التصميم العشوائي التام (CRD)</title>
+    <link rel="stylesheet" href="assets/fonts/cairo.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>التصميم العشوائي التام (CRD)</h1>
+            <div class="basic-equation">
+                <div class="formula">
+                    Total SS = Treatment SS + Error SS
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <label for="treatments">عدد المعاملات:</label>
+                <input type="number" id="treatments" min="2" value="3" required>
+                <label for="replications">عدد المكررات:</label>
+                <input type="number" id="replications" min="2" value="3" required>
+                <button onclick="createTable()">إنشاء جدول البيانات</button>
+            </div>
+
+            <div id="dataTable"></div>
+            <button class="calculate-btn" onclick="calculateResults()">حساب النتائج</button>
+        </main>
+    </div>
+
+    <script src="assets/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
